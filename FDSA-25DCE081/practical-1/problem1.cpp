@@ -19,7 +19,7 @@ int main()
     cout << "Enter number of hours: ";
     cin >> h;
 
-    h = h % n;   // Reduce extra rotations
+    h = h % n;  
 
     for (int k = 0; k < h; k++)
     {
