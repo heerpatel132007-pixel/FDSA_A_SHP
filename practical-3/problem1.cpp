@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Bubble Sort
+
 void bubbleSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++)
@@ -10,7 +10,7 @@ void bubbleSort(int arr[], int n)
         {
             if (arr[j] > arr[j + 1])
             {
-                // Swap
+           
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
@@ -19,7 +19,7 @@ void bubbleSort(int arr[], int n)
     }
 }
 
-// Selection Sort
+
 void selectionSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++)
@@ -34,14 +34,14 @@ void selectionSort(int arr[], int n)
             }
         }
 
-        // Swap
+     
         int temp = arr[i];
         arr[i] = arr[minIndex];
         arr[minIndex] = temp;
     }
 }
 
-// Insertion Sort
+
 void insertionSort(int arr[], int n)
 {
     for (int i = 1; i < n; i++)
@@ -59,7 +59,7 @@ void insertionSort(int arr[], int n)
     }
 }
 
-// Print array
+
 void printArray(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -74,7 +74,7 @@ int main()
     int marks[] = {75, 45, 90, 60, 30};
     int n = 5;
 
-    // Create copies
+ 
     int bubble[5], selection[5], insertion[5];
 
     for (int i = 0; i < n; i++)
